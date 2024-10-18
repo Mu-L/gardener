@@ -257,7 +257,7 @@ images:
       teamname: 'gardener/monitoring-maintainers'
 - name: cortex
   repository: quay.io/cortexproject/cortex
-  tag: v1.18.0
+  tag: v1.18.1
   labels:
   - name: gardener.cloud/cve-categorisation
     value:
@@ -431,7 +431,7 @@ images:
 - name: node-problem-detector
   sourceRepository: github.com/kubernetes/node-problem-detector
   repository: registry.k8s.io/node-problem-detector/node-problem-detector
-  tag: "v0.8.19"
+  tag: "v0.8.20"
   labels:
   - name: 'gardener.cloud/cve-categorisation'
     value:
@@ -766,7 +766,7 @@ images:
 - name: apiserver-proxy
   sourceRepository: github.com/envoyproxy/envoy
   repository: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
-  tag: "v1.31.2"
+  tag: "v1.32.0"
   labels:
   - name: 'gardener.cloud/cve-categorisation'
     value:

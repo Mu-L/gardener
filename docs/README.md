@@ -42,6 +42,7 @@
 * [Supported CPU Architectures for Shoot Worker Nodes](usage/shoot/shoot_supported_architectures.md)
 * [Workerless `Shoot`s](usage/shoot/shoot_workerless.md)
 * [Shoot Workers Settings](usage/shoot/shoot_workers_settings.md)
+* [Access Restrictions](usage/shoot/access_restrictions.md)
 
 ### Shoot Operations
 
@@ -52,7 +53,7 @@
 * [Supported Kubernetes versions](usage/shoot-operations/supported_k8s_versions.md)
 * [Controlling the Kubernetes versions for specific worker pools](usage/shoot-operations/worker_pool_k8s_versions.md)
 
-### High Avaliability
+### High Availability
 
 * [Shoot High-Availability Control Plane](usage/high-availability/shoot_high_availability.md)
 * [Shoot High-Availability Best Practices](usage/high-availability/shoot_high_availability_best_practices.md)
@@ -106,7 +107,7 @@
 * [`seedmanagement.gardener.cloud` API Group](api-reference/seedmanagement.md)
 * [`settings.gardener.cloud` API Group](api-reference/settings.md)
 
-## Proposals
+## Gardener Enhancement Proposals
 
 * [GEP: Gardener Enhancement Proposal Description](proposals/README.md)
 * [GEP: Template](proposals/00-template.md)
@@ -157,7 +158,7 @@
 * [Extending the Monitoring Stack](development/monitoring-stack.md)
 * [How to create log parser for container into fluent-bit](development/log_parsers.md)
 * [`PriorityClasses` in Gardener Clusters](development/priority-classes.md)
-* [High Availability Of Deployed Components](development/high-availability.md)
+* [High Availability Of Deployed Components](development/high-availability-of-components.md)
 * [Checklist For Adding New Components](development/component-checklist.md)
 * [Defaulting Strategy and Developer Guideline](development/defaulting.md)
 * [Autoscaling Specifics for Components](development/autoscaling-specifics-for-components.md)

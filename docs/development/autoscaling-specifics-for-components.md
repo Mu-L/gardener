@@ -19,6 +19,9 @@ However, there are two supported autoscaling modes for the Garden or Shoot clust
 
    The `HVPA` mode is the used autoscaling mode when the `HVPA` feature gate is enabled and the `VPAForETCD` feature gate is disabled.
 
+> [!NOTE]
+> Starting with release `v1.106`, the `HVPA` feature gate is deprecated and locked to false.
+
 - `VPA`
 
    In `VPA` mode, the etcd is scaled by a native `VPA` resource.
@@ -63,6 +66,9 @@ There are three supported autoscaling modes for the Shoot Kubernetes API server.
 
    The `HVPA` mode is the used autoscaling mode when the `HVPA` feature gate is enabled (and the `VPAAndHPAForAPIServer` feature gate is disabled).
 
+> [!NOTE]
+> Starting with release `v1.106`, the `HVPA` feature gate is deprecated and locked to false.
+
 - `VPAAndHPA`
 
    In `VPAAndHPA` mode, the Shoot Kubernetes API server is scaled simultaneously by VPA and HPA on the same metric (CPU and memory usage). The pod-trashing cycle between VPA and HPA scaling on the same metric is avoided by configuring the HPA to scale on average usage (not on average utilization) and by picking the target average utilization values in sync with VPA's allowed maximums. This makes possible VPA to first scale vertically on CPU/memory usage. Once all Pods' average CPU/memory usage is close to exceed the VPA's allowed maximum CPU/memory (the HPA's target average utilization, 1/7 less than VPA's allowed maximums), HPA is scaling horizontally (by adding a new replica).
@@ -80,7 +86,7 @@ There are three supported autoscaling modes for the Shoot Kubernetes API server.
 > Starting with release `v1.101`, the `VPAAndHPAForAPIServer` feature gate is enabled by default.
 > Starting with release `v1.105`, the `VPAAndHPAForAPIServer` feature gate is promoted to GA and locked to true.
 
-In all scaling modes the min replicas count of 2 is imposed by the [High Availability of Shoot Control Plane Components](../development/high-availability.md#control-plane-components).
+In all scaling modes the min replicas count of 2 is imposed by the [High Availability of Shoot Control Plane Components](../development/high-availability-of-components.md#control-plane-components).
 
 The gardenlet sets the initial API server resource requests only when the Deployment is not found. When the Deployment exists, it is not overwriting the kube-apiserver container resources.
 
