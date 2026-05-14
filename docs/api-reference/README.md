@@ -1,7 +1,7 @@
 # Gardener API Reference
 
 * [`authentication.gardener.cloud` API Group](authentication.md)
-* [`core.gardener.cloud` API Group](core.md)
+* [`core.gardener.cloud/v1beta1` API Group](core.md)
 * [`core.gardener.cloud/v1` API Group](core-v1.md)
 * [`extensions.gardener.cloud` API Group](extensions.md)
 * [`local.provider.extensions.gardener.cloud` API Group](provider-local.md)
@@ -10,4 +10,3 @@
 * [`resources.gardener.cloud` API Group](resources.md)
 * [`security.gardener.cloud` API Group](security.md)
 * [`seedmanagement.gardener.cloud` API Group](seedmanagement.md)
-* [`settings.gardener.cloud` API Group](settings.md)
